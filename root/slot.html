@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Vaccine Registration Portal
+        </title>
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <style>
+            body {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <img src="assets/img/logo.png" style="max-height: 30px; width: auto;" alt="...">
+              <a class="navbar-brand" id="logotext" onmouseover="logofun()" href="index.html">&nbsp;&nbsp;Vaccine Registration Portal</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="col-md-6" style="margin-right: 50px;"></div>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="register.html">Vaccine Registration</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" target=__blank href="https://www.cowin.gov.in">Main Website</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          
+        <div class="container">
+            <div class="row"><p><br><br><br><br</p></div>
+        </div>
+        <!--form-->
+        <div class="container">
+            <div class="row">
+                <h3 style="background-color:antiquewhite; padding:10px;">Vaccine Slot Booking</h3>
+                <div class="row"><br></div>
+                <form id="form1" action="success.html">
+                    <div class="row">
+                        <div class="mb-3">
+                            <label class="form-label">State</label>
+                            <input type="text" class="form-control" id="state" name="state" placeholder="Enter State Name">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">District</label>
+                            <input type="text" class="form-control" id="district" name="district" placeholder="District Name">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Centre</label>
+                            <select class="form-select" id="location" name="location" placeholder="Select">
+                                <option value="centre1">Centre 1</option>
+                                <option value="centre2">Centre 2</option>
+                                <option value="centre3">Centre 3</option>
+                                <option value="centre4">Centre 4</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Select Date</label>
+                            <input type="date" class="form-control" id="sbdate" name="sbdate">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <br>
+        <!-- footer -->
+        <footer class="footer bottom">
+        <div class="card text-center" style="margin-right: -20px; margin-left: -20px;">
+            <div class="card-header">
+              Made with ♥ By
+            </div>
+            <div class="card-body">
+              <p class="card-text">Abhilash Bhawna Gaurav Sathwik</p>
+            </div>
+            <div class="card-footer text-muted bg-dark">
+              © 2021 All rights reserved by Team Xtreme🔥
+            </div>
+        </div>
+        </footer>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script>
+          function logofun(){
+              document.getElementById("logotext").className += " animate__animated animate__flash";
+          }
+          myEle = document.getElementById("logotext");
+          myEle.addEventListener("mouseout",function(){
+              myEle.className = "navbar-brand";
+          });
+      </script>
+    </body>
+</html>
